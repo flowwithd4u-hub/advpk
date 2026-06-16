@@ -9,7 +9,12 @@ export function SmoothScroll() {
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    if (
+      !window.matchMedia("(hover: hover) and (pointer: fine)").matches ||
+      window.matchMedia("(max-width: 1024px)").matches
+    )
+      return;
+    if (document.documentElement.scrollHeight <= window.innerHeight) return;
 
     let target = window.scrollY;
     let current = window.scrollY;
