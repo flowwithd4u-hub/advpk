@@ -1,7 +1,0 @@
-{
-"compatibility_date": "2026-06-16",
-"main": "src/routes/index.tsx",
-"assets": {
-"directory": "./dist"
-} 
-}
