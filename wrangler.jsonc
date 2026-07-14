@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "zen-law-flow-b2f5c9ce",
+  "name": "advpk",
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
