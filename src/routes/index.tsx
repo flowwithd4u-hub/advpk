@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
+  AlertTriangle,
   Award,
   BookOpen,
   Building2,
@@ -17,7 +18,6 @@ import {
 import { SITE } from "@/lib/site";
 import { SectionEyebrow } from "@/components/Section";
 import { HeroStatue } from "@/components/HeroStatue";
-import chambersImg from "@/assets/about-chambers.jpg";
 import chambersImg1 from "@/assets/about-chamber.jpg";
 import { ImageLightbox } from "@/components/ImageLightbox";
 import { TeamSection } from "@/components/TeamSection";
@@ -198,43 +198,109 @@ function HomePage() {
           </div>
 
           <div className="reveal reveal-delay-2">
-            <SectionEyebrow>About The Chambers</SectionEyebrow>
-            <h2 className="mt-4 font-display text-4xl md:text-5xl">
-              A Practice Built On <span className="text-gold">Preparation.</span>
+            <SectionEyebrow>Supreme Court Relief Watch</SectionEyebrow>
+            <h2 className="mt-4 font-display text-3xl leading-tight text-gray-900 sm:text-4xl dark:text-gray-50">
+              ILLEGAL SUBVENTION SCHEME: A Nexus of Builders, Banks and NBFCs
             </h2>
-            <p className="mt-5 leading-relaxed text-muted-foreground">
-              Prabhat Kaushik is an Advocate-On-Record at the Supreme Court of India — a designation reserved for advocates who have cleared the SCI&apos;s rigorous examination prescribed under the Supreme Court Rules, 2013. Only an AOR is entitled to file pleadings on the rolls of the Supreme Court, and only an AOR may receive vakalatnamas in apex-court matters. Operating from chambers in Faridabad, the practice combines that apex-court rigour with the personal attention of a focused boutique firm.
-            </p>
-            <p className="mt-3 leading-relaxed text-muted-foreground">
-              Every Brief — From a Magistrate&apos;s Bail Application Under §437 CRPC to a Constitutional Write Under Article 32 — Is Prepared With The Same Discipline: Through Research, Candid Client Counsel and Uncompromising Courtroom Advocacy. The Chambers draws on the Full Architecture Of Indian Law: the Constitution Of 1950, The Bharatiya Nyaya Sanhita (2023), The Bharatiya Nagarik Suraksha Sanhita (2023), The Bharatiya Sakshya Adhiniyam (2023), The Special Statutes that Govern Modern Commerce & Personal Life.
-            </p>
-            <p className="mt-3 leading-relaxed text-muted-foreground">
-              We Treat the Rule of Law as a Working Obligation, Not a Slogan. Settlement is Counselled where it Serves the Client; Litigation is Prosecuted where Rights demand a Hearing. The Objective is Always the Same: a Fair, Principled & Enforceable Outcome.
-            </p>
 
-            <div className="mt-7 grid gap-3 sm:grid-cols-2">
-              {[
-                { icon: Scale, t: "Advocate On Records" },
-                { icon: ShieldCheck, t: "Strict Confidentiality" },
-                { icon: CheckCircle2, t: "Transparent Fees" },
-                { icon: Users, t: "Personal Attention" },
-              ].map((f) => (
-                <div key={f.t} className="flex items-center gap-3 rounded-2xl border border-white/5 bg-white/[0.02] px-4 py-3">
-                  <span className="grid h-9 w-9 place-items-center rounded-xl bg-[color:var(--gold)]/10 text-gold">
-                    <f.icon className="h-4 w-4" />
-                  </span>
-                  <span className="text-sm">{f.t}</span>
+            <div className="mt-6 space-y-5 rounded-[28px] border border-white/10 bg-white/80 p-5 shadow-[0_18px_70px_rgba(0,0,0,0.08)] backdrop-blur-sm sm:p-6 dark:bg-[color:var(--surface-2)]">
+              <p className="text-base leading-relaxed text-muted-foreground">
+                The Supreme Court of India has launched a massive crackdown on the predatory bank-builder nexus, delivering landmark relief to homebuyers trapped in stalled “No EMI Till Possession” subvention schemes.
+              </p>
+
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50">What is a Subvention Scheme?</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Under a subvention scheme, a tripartite agreement is executed among the homebuyer, the bank/financial institution, and the builder/developer. Banks disburse the sanctioned loan amount directly to the builder’s account, and the builder undertakes to pay the EMIs or pre-EMIs until the flat is handed over to the homebuyer. The schemes are marketed with attractive promises of “No Pre-EMI till delivery of possession”.
+                </p>
+              </div>
+
+              <div className="grid gap-4 lg:grid-cols-2">
+                <div className="rounded-2xl border border-white/10 bg-[color:var(--surface)]/70 p-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-50">The Trap</h4>
+                  <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                      <span>While projects were launched between 2010–2017, most builders started defaulting on EMI payments in 2018–2019.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                      <span>When builders defaulted, banks turned to homebuyers for recovery, demanding EMI payments for incomplete flats that were never delivered.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                      <span>Homebuyers’ accounts were reported as NPAs, and their CIBIL scores were adversely impacted.</span>
+                    </li>
+                  </ul>
                 </div>
-              ))}
-            </div>
 
-            <Link
-              to="/about"
-              data-cursor="hover"
-              className="story-link mt-7 inline-flex items-center gap-1.5 text-sm text-gold"
-            >
-              Read The Full Profile <ArrowRight className="h-3.5 w-3.5" />
-            </Link>
+                <div className="rounded-2xl border border-white/10 bg-[color:var(--surface)]/70 p-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-50">Critical Relief for Homebuyers</h4>
+                  <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                      <span>Issued critical stays on coercive EMI recoveries.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                      <span>Protected buyers’ CIBIL scores from being tarnished by builder defaults.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                      <span>Ordered CBI and ED probes into financial collusion.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950 dark:border-amber-400/40 dark:bg-amber-500/10 dark:text-amber-200">
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
+                  <div>
+                    <p className="font-semibold">The Urgent Caveat</p>
+                    <p className="mt-1">These vital interim protections against loan recovery and credit downgrades are generally granted only to active petitioners before the Court. Sitting back leaves your savings and creditworthiness vulnerable.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-[color:var(--surface)]/70 p-4">
+                <h4 className="font-semibold text-gray-900 dark:text-gray-50">How We Can Help</h4>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  As an <strong>Advocate-on-Record (AOR)</strong>—the only category of advocate authorized to file cases before the Supreme Court of India—I systematically navigate the Supreme Court’s strict documentation mandates.
+                </p>
+                <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <Scale className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                    <span>Seamlessly drafting your compliance disclosures.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Scale className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                    <span>Exposing bank deviations from RBI guidelines.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Scale className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                    <span>Reviewing your tripartite agreement for legal vulnerabilities.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-[color:var(--surface)]/70 p-4 sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  <strong>Take Action</strong> Contact my chambers today to review your tripartite agreement and secure your financial future at the highest court of the land. The window for relief is open—but only for those who step forward.
+                </p>
+                <Link
+                  to="/contact"
+                  data-cursor="hover"
+                  className="inline-flex items-center justify-center rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-[color:var(--primary-foreground)] transition-transform duration-200 hover:translate-y-[-1px]"
+                >
+                  Contact My Chambers Today
+                </Link>
+              </div>
+
+              <p className="pt-2 text-sm text-gray-500">
+                Disclaimer: This content is for informational purposes only and does not constitute legal advice. Every case is unique; consult a qualified legal professional for advice specific to your situation.
+              </p>
+            </div>
           </div>
         </div>
       </section>
